@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+
+<body>
+    <main class="primero">
+        .primero{}
+        <p>
+            p.primero{}
+            <span>
+                <p class="primero">
+                    span .primero{}
+                </p>
+            </span>
+        </p>
+        <span>
+            .primero > span{ }
+            .primero span{ }
+        </span>
+        <p class="primero parte">
+            .primero.parte{ }
+        </p>
+        <section id="segundo">
+            section.primero{}
+            <p id="segundo">
+                p#segundo{}
+            </p>
+            <span id="paco">
+                #paco{ }
+            </span>
+        </section>
+    </main>
+</body>
+
+</html>
